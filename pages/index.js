@@ -1,65 +1,39 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Developer List | Home</title>
+        <meta name="keywords" content="developers"/>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <div>
+        <h1 className={styles.title}>Web Development</h1>
+        <p className={styles.text}>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an 
+        intranet (a private network).[1] Web development can range from developing a simple single static page of 
+        plain text to complex web applications, electronic businesses, and social network services. A more 
+        comprehensive list of tasks to which Web development commonly refers, may include Web engineering, 
+        Web design, Web content development, client liaison, client-side/server-side scripting, Web server and 
+        network security configuration, and e-commerce development.</p>
+        <p className={styles.text}>Among Web professionals, "Web development" usually refers to the main non-design aspects of building 
+        Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make 
+        content changes easier and available with basic technical skills.</p>
+        <p className={styles.text}>For larger organizations and businesses, Web development teams can consist of hundreds of people 
+        (Web developers) and follow standard methods like Agile methodologies while developing Web sites. Smaller 
+        organizations may only require a single permanent or contracting developer, or secondary assignment to 
+        related job positions such as a graphic designer or information systems technician. Web development may be 
+        a collaborative effort between departments rather than the domain of a designated department. There are 
+        three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. 
+        Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end 
+        developers deal with the servers.</p>
+        <Link href="/developers">
+          <a className={styles.btn}>See Developer Listing</a>
+        </Link>
+      </div>
+    </>
   )
 }
